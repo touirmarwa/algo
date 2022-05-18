@@ -1,0 +1,36 @@
+ALGORITHM wsalgo
+
+VAR
+    word : CHAR;
+    counter : INTEGER;
+    voyelles : INTEGER;
+    space : INTEGER;
+
+BEGIN
+    
+    counter := 0;
+    voyelles := 0;
+    space := 1;
+
+    REPEAT
+    Write("c");
+    Read(c);
+
+        IF (word="a" OR word="e" OR word="i" OR word="o" OR word="u" OR word="y") THEN
+            voyelles = voyelles+1;
+        END_IF
+
+        IF (word=" ") THEN
+            space = space+1;
+        END_IF
+
+    UNTIL (word = ".")
+
+    Write("counter");
+    Write("voyelles");
+    Write("word"); 
+ 
+
+END
+
+
